@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>Digital Clock</h1>
+        <p>Select a Timezone:</p>
+      </div>
+    </header>
+
+    <div class="select-container">
+      <select id="timezones">
+        <option value="America/Sao_Paulo">Brasília</option>
+        <option value="America/New_York">New York</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
+        <option value="Europe/London">London</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Asia/Dubai">Dubai</option>
+        <option value="Australia/Sydney">Sydney</option>
+      </select>
+    </div>
+
+    <div id="time">
+      <div class="circle" style="--cor:rgb(2, 126, 85);">
+        <div class="dots hr_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="hh"></circle>
+        </svg>
+        <div id="hours">00<br><span>Hours</span></div>
+      </div>
+
+      <div class="circle" style="--cor:rgb(1, 127, 144);">
+        <div class="dots mnt_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="mm"></circle>
+        </svg>
+        <div id="minutes">00<br><span>Minutes</span></div>
+      </div>
+
+      <div class="circle" style="--cor:rgb(72, 104, 207);">
+        <div class="dots sec_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="ss"></circle>
+        </svg>
+        <div id="seconds">00<br><span>Seconds</span></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Made by <a href="https://github.com/JoseVitorOliveira/" target="_blank">José Vítor</a></p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
