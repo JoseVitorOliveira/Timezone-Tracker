@@ -159,5 +159,15 @@ body {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .title {
+      font-size: 25px;
+    }
+    
+    select {
+      font-size: 14px;
+    }
+  }
+
 
   
