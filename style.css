@@ -55,7 +55,8 @@ body {
 
 #time {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin-top: 50px;
     align-items: center;
     gap: 40px;
     color: rgb(213, 207, 207);
@@ -146,15 +147,4 @@ body {
 .footer a {
     color: white;
     font-weight: bold;
-}
-
-@media only screen and (min-width: 768px) {
-    #time {
-        flex-direction: row;
-        margin-top: 50px;
-    }
-
-    .circulo {
-        margin-right: 40px;
-    }
 }
